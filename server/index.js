@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const PORT = 8080;
-const CLIENT_PATH = path.resolve(__dirname, '../client/dist');
+const CLIENT_PATH = path.resolve(__dirname, '../');
 app.use(express.static(CLIENT_PATH));
 
 app.get('/pop', function(req, res){
