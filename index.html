@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Michael Kunz's Portfolio</title>
   </head>
   <body>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <style>
       body{
         background: rgba(35,35,35,1);
         color: rgba(240,240,230,1);
-      }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
       a {
-  color: white
-}
+    color: white
+        }
     </style>
-    <h2>Projects: </h2>
-    <a href="http://ec2-3-143-216-15.us-east-2.compute.amazonaws.com:8080">pop^</a>
-    <br></br>
-    <a href="http://165.232.128.76:8080/" target="_blank" >study guide</a>
+    <div id="app"></div>
+    <script type="text/babel" src="Portfolio.jsx"></script>
   </body>
 </html>
