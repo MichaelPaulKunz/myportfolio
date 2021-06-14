@@ -3,23 +3,59 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Michael Kunz's Portfolio</title>
-  </head>
-  <body>
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <style>
       body{
         background: rgba(35,35,35,1);
         color: rgba(240,240,230,1);
-        display: flex;
         justify-content: center;
-        align-items: center;
         }
       a {
     color: white
         }
+    #app{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    nav {
+        background: white;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 20px;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 50px;
+    }
+    nav ul {
+      justify-content: center;
+      text-align: center;
+      list-style-image: none;
+    }
+    nav li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+    nav a {
+        justify-content: center;
+        text-decoration: none;
+        color: blue;
+    }
     </style>
+  </head>
+  <body>
+    <div>
+      <nav>
+        <ul>
+            <li><a href="https://www.pop-up-app.com" target="_blank"> Pop^ </a></li>
+            <li><a href="http://165.232.128.76:8080"target="_blank"> Ultimate Study Guide </a></li>
+            <li><a href="https://usnero.bandcamp.com/"target="_blank">Music</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div></div>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <div id="app"></div>
     <script type="text/babel" src="Portfolio.jsx"></script>
   </body>
